@@ -10,11 +10,13 @@ import org.bukkit.OfflinePlayer;
 public abstract class EconomyProvider {
 
     private final String identifier;
+    private String currency;
     private String name;
 
     public EconomyProvider(String identifier) {
         this.identifier = identifier;
         this.name = identifier;
+        this.currency = null;
     }
 
     public abstract void onEnable();
@@ -31,6 +33,14 @@ public abstract class EconomyProvider {
 
     public void setCurrencyDisplayName(String name) {
         this.name = name;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public String getCurrency() {
+        return currency;
     }
 
     public String getDisplayName() {

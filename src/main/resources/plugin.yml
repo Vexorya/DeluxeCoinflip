@@ -11,6 +11,7 @@ softdepend:
   - TokenManager
   - EssentialsX
   - LeaderOS
+  - CoinsEngine
 
 permissions:
   coinflip.admin:

@@ -24,10 +24,10 @@ settings:
     - cf
 
   # Should we broadcast when a coinflip is created?
-  broadcast-coinflip-creation: false
+  broadcast-coinflip-creation: true
 
   # How much needs to be won to broadcast to everyone? Set to 0 to broadcast all winnings.
-  minimum-broadcast-winnings: 1000
+  minimum-broadcast-winnings: 0
 
   tax:
     enabled: true
@@ -47,12 +47,12 @@ settings:
     # https://dev.bukkit.org/projects/vault
     VAULT:
       enabled: true
-      display_currency_name: "Money"
+      display_currency_name: "Dinar"
 
     # TokenEnchant Economy (requires TokenEnchant plugin)
     # https://polymart.org/resource/155
     TOKENENCHANT:
-      enabled: true
+      enabled: false
       display_currency_name: "TokenEnchant"
 
     # PlayerPoints Economy (requires PlayerPoints plugin)
@@ -64,26 +64,33 @@ settings:
     # TokenManager Economy (requires TokenManager plugin)
     # https://www.spigotmc.org/resources/8610/
     TOKENMANAGER:
-      enabled: true
+      enabled: false
       display_currency_name: "TokenManager"
 
     # ZithiumMobcoins integration (requires ZithiumMobcoins plugin)
     # https://www.spigotmc.org/resources/113153/
     ZITHIUMMOBCOINS:
-      enabled: true
+      enabled: false
       display_currency_name: "Mobcoins"
 
     # BeastTokens Economy (requires BeastTokens plugin)
     # https://www.spigotmc.org/resources/20806/
     BEASTTOKENS:
-      enabled: true
+      enabled: false
       display_currency_name: "Tokens"
 
     # LeaderOS Credits
     # https://www.spigotmc.org/resources/105496/
     LEADEROS:
       enabled: true
-      display_currency_name: "Credits"
+      display_currency_name: "Vexorya Yıldızı"
+
+    # CoinsEngine Economy (requires CoinsEngine plugin)
+    # https://www.spigotmc.org/resources/84121/
+    COINSENGINE:
+      enabled: true
+      currency: "VexCoin"
+      display_currency_name: "VexCoin"
 
 
 coinflip-gui:

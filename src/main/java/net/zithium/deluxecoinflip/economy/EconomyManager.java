@@ -62,6 +62,10 @@ public class EconomyManager {
                         provider.setCurrencyDisplayName(providerSection.getString("display_currency_name"));
                     }
 
+                    if (providerSection.contains("currency")) {
+                        provider.setCurrency(providerSection.getString("currency"));
+                    }
+
                     provider.onEnable();
                 }
             }
