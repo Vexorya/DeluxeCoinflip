@@ -84,11 +84,11 @@ public class EconomyManager {
     public void registerEconomyProvider(EconomyProvider provider, String requiredPlugin) {
         if (requiredPlugin != null) {
             if (plugin.getServer().getPluginManager().getPlugin(requiredPlugin) != null) {
-                economyProviders.put(provider.getIdentifier().toUpperCase(), provider);
+                economyProviders.put(provider.getIdentifier().toUpperCase(Locale.ENGLISH), provider);
                 plugin.getLogger().info("Registered economy provider '" + provider.getIdentifier() + "' using " + requiredPlugin + " plugin.");
             }
         } else {
-            economyProviders.put(provider.getIdentifier().toUpperCase(), provider);
+            economyProviders.put(provider.getIdentifier().toUpperCase(Locale.ENGLISH), provider);
             plugin.getLogger().info("Registered economy provider '" + provider.getIdentifier());
         }
     }
