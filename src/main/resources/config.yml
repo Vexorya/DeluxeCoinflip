@@ -79,6 +79,12 @@ settings:
       enabled: true
       display_currency_name: "Tokens"
 
+    # LeaderOS Credits
+    # https://www.spigotmc.org/resources/105496/
+    LEADEROS:
+      enabled: true
+      display_currency_name: "Credits"
+
 
 coinflip-gui:
   title: "&lFLIPPING COIN.."
