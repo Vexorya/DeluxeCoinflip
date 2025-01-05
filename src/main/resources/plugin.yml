@@ -1,8 +1,8 @@
 name: DeluxeCoinflip
 version: '${version}'
 main: net.zithium.deluxecoinflip.DeluxeCoinflipPlugin
-authors: [ ItsLewizzz, ItzSave, ItsSimplyLeo ]
-api-version: 1.19
+authors: [ ItsLewizzz, ItzSave, ItsSimplyLeo, hyperion ]
+api-version: 1.21
 
 softdepend:
   - PlaceholderAPI
@@ -10,6 +10,7 @@ softdepend:
   - TokenEnchant
   - TokenManager
   - EssentialsX
+  - LeaderOS
 
 permissions:
   coinflip.admin:
