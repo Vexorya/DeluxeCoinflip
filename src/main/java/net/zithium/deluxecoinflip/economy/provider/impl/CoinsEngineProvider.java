@@ -1,6 +1,5 @@
 package net.zithium.deluxecoinflip.economy.provider.impl;
 
-import net.zithium.deluxecoinflip.DeluxeCoinflipPlugin;
 import net.zithium.deluxecoinflip.economy.provider.EconomyProvider;
 import org.bukkit.OfflinePlayer;
 import su.nightexpress.coinsengine.api.CoinsEngineAPI;

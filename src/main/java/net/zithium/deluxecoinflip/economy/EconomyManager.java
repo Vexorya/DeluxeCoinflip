@@ -46,15 +46,16 @@ public class EconomyManager {
                 new ZithiumMobcoinsProvider(),
                 new PlayerPointsProvider(),
                 new BeastTokensProvider(),
-                new LeaderOSProvider()
+                new LeaderOSProvider(),
+                new CoinsEngineProvider()
         ).forEach(provider -> registerEconomyProvider(provider, provider.getIdentifier()));
 
         Bukkit.getScheduler().runTask(plugin, () -> {
             for (EconomyProvider provider : new ArrayList<>(economyProviders.values())) {
-                ConfigurationSection providerSection = section.getConfigurationSection(provider.getIdentifier().toUpperCase());
+                ConfigurationSection providerSection = section.getConfigurationSection(provider.getIdentifier().toUpperCase(Locale.ENGLISH));
                 if (providerSection != null) {
                     if (!providerSection.getBoolean("enabled")) {
-                        economyProviders.remove(provider.getIdentifier().toUpperCase());
+                        economyProviders.remove(provider.getIdentifier().toUpperCase(Locale.ENGLISH));
                         continue;
                     }
 
