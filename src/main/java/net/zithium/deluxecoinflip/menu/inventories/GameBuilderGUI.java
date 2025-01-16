@@ -161,7 +161,7 @@ public class GameBuilderGUI {
         List<String> lore = section.getStringList("lore-header").stream().map(line -> line.replace("{BET_AMOUNT}", TextUtil.numberFormat(game.getAmount()))).collect(Collectors.toList());
 
         for (EconomyProvider provider : economyManager.getEconomyProviders().values()) {
-            if (game.getProvider().equals(provider.getIdentifier().toUpperCase())) {
+            if (game.getProvider().equals(provider.getIdentifier().toUpperCase(Locale.ENGLISH))) {
                 lore.add(section.getString("currency_lore_selected").replace("{CURRENCY}", provider.getDisplayName()));
             } else {
                 lore.add(section.getString("currency_lore_unselected").replace("{CURRENCY}", provider.getDisplayName()));

@@ -65,7 +65,6 @@ public class SQLiteHandler implements StorageHandler {
     }
 
     private synchronized void createTable() {
-        checkPre2_7_10();
         try (Connection tableConnection = getConnection();
              Statement statement = tableConnection.createStatement()) {
             String sql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (" +
